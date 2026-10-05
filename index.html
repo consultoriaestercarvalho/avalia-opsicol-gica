@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Avaliação Psicológica — Guia de estudo</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--tx:#1b2030;--mu:#5b6275;--ln:#dde1ec;--c1:#0f8b8d;--c2:#d9822b;--c3:#7b5cd6;--c4:#c8456b;--c5:#2e7d4f;--c6:#2f6fd0;--ok:#2e7d4f;--no:#c8456b}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151f;--card:#1b2030;--tx:#e8ebf5;--mu:#98a0b8;--ln:#2d3450;--c1:#3cc4c6;--c2:#f0a34e;--c3:#a48bf0;--c4:#ee7d9d;--c5:#58c183;--c6:#6fa3f5;--ok:#58c183;--no:#ee7d9d}}
+:root[data-theme="dark"]{--bg:#12151f;--card:#1b2030;--tx:#e8ebf5;--mu:#98a0b8;--ln:#2d3450;--c1:#3cc4c6;--c2:#f0a34e;--c3:#a48bf0;--c4:#ee7d9d;--c5:#58c183;--c6:#6fa3f5;--ok:#58c183;--no:#ee7d9d}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 'Bricolage Grotesque',system-ui,sans-serif}
+header{padding:28px 20px 8px;max-width:860px;margin:auto}
+h1{font-size:clamp(26px,5vw,40px);line-height:1.1;margin:0 0 6px;font-weight:800}
+header p{margin:0;color:var(--mu)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;display:flex;gap:6px;overflow-x:auto;padding:10px 20px;max-width:860px;margin:auto;border-bottom:1px solid var(--ln)}
+nav button{flex:none;border:1px solid var(--ln);background:var(--card);color:var(--tx);padding:8px 14px;border-radius:99px;font:inherit;font-size:14px;cursor:pointer}
+nav button[aria-selected=true]{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+button:focus-visible,summary:focus-visible{outline:3px solid var(--c6);outline-offset:2px}
+main{max-width:860px;margin:auto;padding:18px 20px 60px}
+section[hidden]{display:none}
+details{background:var(--card);border:1px solid var(--ln);border-left:6px solid var(--k);border-radius:10px;margin:12px 0;padding:0}
+summary{cursor:pointer;padding:14px 16px;font-weight:600;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary small{display:block;font-weight:400;color:var(--mu)}
+details>div{padding:0 18px 14px}
+details h4{margin:16px 0 4px;color:var(--k)}
+li{margin:4px 0}
+.src{font-size:13px;color:var(--mu)}
+.box{background:var(--card);border:1px solid var(--ln);border-radius:10px;padding:14px 16px;margin:12px 0;border-left:6px solid var(--k)}
+.box b.t{color:var(--k)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+.tw{overflow-x:auto}
+td,th{border:1px solid var(--ln);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:var(--bg)}
+.fc{min-height:190px;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--card);border:2px solid var(--c3);border-radius:14px;padding:22px;font-size:19px;cursor:pointer;width:100%;color:var(--tx);font-family:inherit}
+.fc.back{border-color:var(--c5);font-size:17px}
+.row{display:flex;gap:8px;margin:12px 0;flex-wrap:wrap;align-items:center}
+.btn{border:1px solid var(--ln);background:var(--card);color:var(--tx);padding:9px 16px;border-radius:8px;font:inherit;cursor:pointer}
+.btn.p{background:var(--c6);border-color:var(--c6);color:#fff}
+.opt{display:block;width:100%;text-align:left;margin:8px 0;padding:12px 14px;border:1px solid var(--ln);border-radius:10px;background:var(--card);color:var(--tx);font:inherit;cursor:pointer}
+.opt.ok{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 18%,var(--card))}
+.opt.no{border-color:var(--no);background:color-mix(in srgb,var(--no) 18%,var(--card))}
+.ex{padding:10px 14px;border-radius:8px;background:var(--card);border:1px dashed var(--mu);margin:10px 0}
+.bar{height:8px;background:var(--ln);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:var(--c6);width:0;transition:width .3s}
+</style></head><body>
+<header><h1>Avaliação Psicológica</h1><p>Guia de estudo · 4º período · Prof.ª Amanda Novaes · Cartilha do CFP: só p. 10–12 e 24–36</p></header>
+<nav role="tablist" id="nav"></nav>
+<main>
+
+<section id="completo">
+<p class="src">Toque em cada bloco para abrir. A cor indica a fonte: <b style="color:var(--c1)">aula</b> · <b style="color:var(--c2)">Pellini</b> · <b style="color:var(--c3)">cartilha p.10–12</b> · <b style="color:var(--c4)">cartilha p.24–36</b> · <b style="color:var(--c6)">Res. 09/2018</b> · <b style="color:var(--c5)">Res. 06/2019</b>.</p>
+
+<details style="--k:var(--c1)" open><summary>1. O que é Avaliação Psicológica (aula)<small>Conceito, nomes antigos e critérios</small></summary><div>
+<p>A Avaliação Psicológica é uma sub-área da Psicologia que surgiu para <b>medir fenômenos ou processos psicológicos</b>. Ela nasceu de situações práticas: problemas de aprendizagem, de convivência social e de adaptação ao trabalho, sempre com uso forte de técnicas de exame.</p>
+<p>Hoje não dá para "dar um nome" à avaliação só pela finalidade (seletiva, psicoeducacional, neuropsicológica…). Avaliar sempre é <b>construir conhecimento</b> sobre fenômenos psicológicos, dentro das condições teóricas, metodológicas e de instrumentos do psicólogo.</p>
+<h4>Termos que se confundem com avaliação</h4>
+<ul><li><b>Exame psicológico / psicotécnico:</b> ligado a seleção em empresas, concursos públicos e <b>carteira de motorista</b> (trânsito). "Psicotécnico" vem dos técnicos que faziam o exame antes de a profissão existir oficialmente no Brasil.</li>
+<li><b>Psicodiagnóstico:</b> avaliação no atendimento <b>clínico</b>, com começo e fim previstos (curto/médio prazo), para fazer diagnóstico e encaminhar para processos terapêuticos.</li></ul>
+<h4>Os 3 critérios (pilares)</h4>
+<ul><li><b>Medida:</b> identifica e caracteriza um fenômeno psicológico. Quem dá sentido à medida são as <b>teorias</b>; se o profissional esquece isso, o número vale mais que a teoria (erro).</li>
+<li><b>Instrumentos/testes:</b> formas objetivas e padronizadas de medir o comportamento. Cada teste tem descrição metodológica própria para controlar variáveis que atrapalhem, e precisa ter sua qualidade verificada (eficácia e eficiência).</li>
+<li><b>Processos de avaliação:</b> a sequência de etapas abaixo.</li></ul>
+<h4>Etapas do processo (nessa ordem)</h4>
+<ol><li>Recebimento da demanda</li><li>Planejamento da avaliação</li><li>Entrevista psicológica</li><li>Aplicação de técnicas e instrumentos</li><li>Análise e integração dos dados</li><li>Elaboração do documento psicológico</li><li>Devolutiva</li></ol>
+<p>Ponto crucial: o profissional precisa conhecer os instrumentos <b>e</b> estar atualizado nas teorias para interpretar resultados.</p></div></details>
+
+<details style="--k:var(--c2)"><summary>2. Pellini — aspectos técnicos e éticos<small>Texto escaneado (p. 13–18)</small></summary><div>
+<ul><li>A AP é um conjunto de conhecimentos, práticas, técnicas e instrumentos. Ciências Humanas e Sociais não podem se reduzir ao discurso da razão, nem se nega o modelo das Ciências da Natureza.</li>
+<li>Gonçalves (2004): ao buscar objetividade só pelos métodos, a Psicologia virou <b>instrumentalista</b> e esqueceu as circunstâncias em que se constitui.</li>
+<li>Usar teste sem perceber que ele é produto de uma <b>medida</b> deixa a atividade de aferir atributos <b>estereotipada</b>.</li>
+<li>AP = "processo de conhecer" fenômenos psicológicos (Cruz, 2002). Não é só gerar um produto: envolve elaborar e escolher instrumentos, aplicar e lidar com <b>consequências éticas</b>.</li>
+<li>É sempre <b>processo</b>: integra testes, entrevistas, observações e análise de documentos. <b>Testagem é só um passo</b> e um dos recursos (Pellini, 2015). Entrevista, dinâmicas, vivências e jogos também são imprescindíveis (Machado, 2007).</li>
+<li>Não se recomenda usar <b>uma só técnica ou instrumento</b>. A integração das informações deve ser ampla para dar conta dos objetivos.</li>
+<li><b>Res. CFP 007/2003</b> (hoje revogada): AP = processo técnico-científico de coleta de dados, estudos e interpretação de informações sobre fenômenos psicológicos resultantes da relação do indivíduo com a sociedade, usando estratégias, métodos, técnicas e instrumentos.</li>
+<li>O psicólogo precisa de vasto conhecimento das técnicas e das teorias, e de crítica consciente. <b>Código de Ética (2005), art. 1º, "c"</b>: prestar serviços de qualidade usando conhecimentos e técnicas fundamentados na ciência, na ética e na legislação. Desconhecer a técnica ou não se atualizar = <b>falha técnica que fere a ética</b>. Exemplo do texto: um teste mal aplicado pode levar um juiz a afastar uma criança do pai por dois anos ou mais.</li>
+<li>A ética mostra <i>para quê</i>, <i>com que objetivo</i> e <i>como</i> fazer. A prática é social: a avaliação "reverbera" na vida de um sujeito concreto (Rios, 2004).</li>
+<li>Avaliações subsidiam decisões como guarda de crianças, visitas dos pais, encaminhamento a instituições, CNH, porte de arma, contratação, permanência no cárcere, avaliação escolar.</li>
+<li>As pessoas se queixam e denunciam; os <b>Conselhos de Psicologia</b> mediam profissão e sociedade e recebem essas queixas.</li>
+<li>Qualidade da AP tem dimensão <b>técnico-ético-política</b>: eficácia técnica + caráter ético.</li>
+<li><b>Considerações finais:</b> entender a AP de forma crítica, com a história e os determinantes teórico-metodológicos. Atuação guiada pelo respeito à liberdade, dignidade e integridade (Princípio I do Código de Ética). Buscar um <b>meio-termo</b> entre instrumentos/técnicas e ética, sem esquecer fatores sociais, culturais e ideológicos, para uma compreensão global do indivíduo.</li></ul></div></details>
+
+<details style="--k:var(--c3)"><summary>3. Cartilha CFP — Questões gerais (p. 10–12)<small>Perguntas 1 a 4</small></summary><div>
+<h4>1. O que é AP?</h4>
+<p>Processo técnico e científico com pessoas ou grupos, que exige metodologias específicas. A <b>Res. 9/2018</b> define: processo estruturado de investigação de fenômenos psicológicos, com métodos, técnicas e instrumentos, para <b>prover informações à tomada de decisão</b> (individual, grupal ou institucional), conforme demandas, condições e finalidades.</p>
+<p>É dinâmica, tem caráter <b>explicativo</b> e serve a vários campos: clínico, saúde, educação, trabalho, avaliações compulsórias. Exige planejamento prévio e escolha de procedimentos adequados.</p>
+<p>O psicólogo deve basear a decisão <b>obrigatoriamente</b> em fontes fundamentais, podendo usar fontes complementares conforme o contexto.</p>
+<div class="tw"><table><tr><th>Fontes fundamentais</th><th>Fontes complementares</th></tr>
+<tr><td>a) testes psicológicos aprovados pelo CFP<br>b) entrevistas psicológicas e anamnese<br>c) protocolos/registros de observação do comportamento (individual ou grupal)</td><td>a) técnicas e instrumentos <b>não psicológicos</b> com respaldo científico, éticos e legais<br>b) documentos técnicos (protocolos ou relatórios de equipes multiprofissionais)</td></tr></table></div>
+<h4>2. AP × testagem psicológica</h4>
+<p><b>Avaliação</b> = processo amplo, integra várias fontes (testes, entrevistas, observação sistemática, documentos) e considera o contexto e os determinantes <b>biopsicossociais</b>. <b>Testagem</b> = aplicar testes e obter informações deles; é <b>uma etapa</b> da avaliação.</p>
+<h4>3. Que respostas a AP dá?</h4>
+<p>Fornece informações para levantar <b>hipóteses</b> sobre características psicológicas (como a pessoa desempenha uma atividade, qualidade das interações, atitudes ao dirigir…). A qualidade depende da escolha de instrumentos/estratégias e de bases teóricas. Como é mais abrangente que a testagem, dá respostas mais amplas.</p>
+<h4>4. Limites da AP</h4>
+<p>O comportamento humano resulta de muitos fatores que interagem, então é praticamente impossível responder com <b>certeza inquestionável</b> ou prever comportamento de forma determinística. Mesmo assim, avaliações com método científico são <b>muito mais confiáveis</b> que opinião leiga ou acaso.</p></div></details>
+
+<details style="--k:var(--c4)"><summary>4. Cartilha CFP — Uso dos testes (p. 24–36)<small>Perguntas 14 a 34</small></summary><div>
+<ul>
+<li><b>14. Teste psicológico:</b> instrumento profissional que identifica, descreve, qualifica e mensura características psicológicas por procedimentos sistemáticos de observação e descrição do comportamento, fundamentados na ciência psicológica.</li>
+<li><b>15. Requisitos mínimos para parecer favorável</b> (Anexo I da Res. 9/2018): a) construto especificado; b) caracterização fundamentada na literatura; c) ao menos <b>1 estudo satisfatório de análise de itens</b> (não vale para projetivos); d) ao menos <b>1 estudo brasileiro de precisão ≥ 0,60</b>; e) estudo de <b>estrutura interna</b> (quando aplicável) + outro estudo de validade (que não seja de conteúdo); f) sistema de correção e interpretação baseado na literatura.</li>
+<li><b>16. Prazo para reaplicar:</b> a lei <b>não define</b>. Ver o manual; se não constar, usar a literatura científica (depende do construto).</li>
+<li><b>17. Onde comprar:</b> editoras, autores ou responsáveis técnicos. A lista do Satepsi mostra a editora de cada teste (satepsi.cfp.org.br).</li>
+<li><b>18. CFP indica testes por contexto?</b> <b>Não.</b> A escolha é do psicólogo (autonomia). O CFP orienta, fiscaliza e regulamenta; só informa quais têm requisitos mínimos (favoráveis).</li>
+<li><b>19. Equipe tem autonomia?</b> Sim, art. 1º §2º da Res. 9/2018, desde que fundamentada na literatura científica e nas normas do CFP.</li>
+<li><b>20. Cuidado na escolha:</b> consultar o <b>Satepsi</b> (aprovado?) e depois o <b>manual</b> (construto, contextos e propósitos adequados).</li>
+<li><b>21. Cuidados no uso:</b> conhecer as resoluções (9/2018 e 6/2019); usar só teste <b>favorável</b>; <b>descartar desfavorável</b>; ser proficiente no teste; respeitar características do avaliando (principalmente online: computador, internet, ambiente seguro); considerar limitações físicas/psicológicas; cuidar do ambiente, do espaço e do vestuário dos aplicadores; seguir o manual (aplicação, material padronizado, interpretação); lembrar que o teste <b>não define</b> o processo, é só um elemento.</li>
+<li><b>22 e 23. Aplicar/adaptar diferente do manual?</b> <b>Não.</b> Validade, precisão e normas dependem da aplicação padronizada. Mudar forma, estímulos, interação, ambiente ou público-alvo compromete o resultado. É <b>falta ética</b> (Código de Ética, art. 2º, "h": interferir na validade e fidedignidade dos instrumentos).</li>
+<li><b>24. Por quanto tempo vale o parecer favorável?</b> A teoria não vence, mas os <b>estudos psicométricos</b> (validade, precisão, normas) precisam ser revisados a cada <b>15 anos</b> (art. 14). Sem revisão, o teste passa a desfavorável.</li>
+<li><b>25. Informatizado × online:</b> são coisas <b>diferentes</b>. Teste informatizado exige estudo de equivalência com lápis e papel aprovado pela CCAP. Para uso remoto, o manual aprovado precisa permitir. A responsabilidade pelas condições é do psicólogo.</li>
+<li><b>26. Teste fora da lista do CFP?</b> Só os aprovados podem ser usados. Usar parecer desfavorável ou "não avaliado" é <b>falta ética</b> (art. 1º "c" e art. 2º "f" do Código), <b>exceto</b> pesquisa e ensino com objetivo formativo e histórico.</li>
+<li><b>27. É teste psicológico?</b> Quem decide é a <b>CCAP</b> (Comissão Consultiva em Avaliação Psicológica). Na dúvida: consultar o Satepsi e pedir ao <b>CRP</b> que envie ao CFP. Instrumento <b>não privativo</b> pode ser fonte complementar/secundária.</li>
+<li><b>28. Não está na lista?</b> Art. 2º §2º e §3º: o CRP (ou o profissional via CRP) submete à CCAP. Na dúvida, consultar o CRP.</li>
+<li><b>29. Instrumentos NÃO PRIVATIVOS:</b> não são teste psicológico, logo <b>não são fonte fundamental</b>; podem ser fonte complementar se tiverem base científica. Concluir sobre o estado psicológico <b>só com não privativos = falta ética</b>.</li>
+<li><b>30. Teste não avaliado/não aprovado como complementar?</b> <b>Não.</b> Nem fundamental nem complementar.</li>
+<li><b>31. Fotocópias:</b> <b>proibidas</b> em qualquer hipótese, nem para fins acadêmicos ou pesquisa (baixa qualidade compromete validade + arts. 28 e 29 da Lei de Direitos Autorais 9.610/1998). Material reutilizável deve estar sem rasuras ou marcas.</li>
+<li><b>32. Divulgação indevida na internet:</b> denunciar à Comissão de Orientação e Fiscalização (COF) do CRP.</li>
+<li><b>33. Pesquisa:</b> consultar o <b>Comitê de Ética em Pesquisa</b> (Res. CNS 466/2012 e 510/2016). O CFP orienta o exercício profissional.</li>
+<li><b>34. Guarda dos materiais:</b> responsabilidade do psicólogo e/ou da instituição; mínimo de <b>5 anos</b> (pode ser ampliado por lei, ordem judicial ou caso específico); local com sigilo e privacidade, à disposição dos CRPs (Res. CFP 1/2009, art. 4º).</li></ul></div></details>
+
+<details style="--k:var(--c6)"><summary>5. Resolução CFP nº 09/2018<small>Diretrizes da AP e Satepsi</small></summary><div>
+<ul><li><b>Art. 1º:</b> definição de AP (a mesma da cartilha). Testes incluem escalas, inventários, questionários e métodos projetivos/expressivos. O psicólogo decide métodos e técnicas, desde que fundamentados.</li>
+<li><b>Art. 2º:</b> fontes fundamentais × complementares. Teste desfavorável ou não avaliado = falta ética (exceto pesquisa e ensino formativo/histórico).</li>
+<li><b>Art. 3º:</b> documentos seguem as resoluções do CFP; é obrigatório manter registros (Res. 01/2009).</li>
+<li><b>Art. 4º:</b> teste psicológico identifica, descreve, qualifica e mensura características psicológicas.</li>
+<li><b>Art. 6º:</b> requisitos: fundamentação teórica (construto), objetivos e população-alvo, qualidade dos estímulos, evidências dos itens (exceto projetivos), validade e precisão, sistema de correção (referenciado à <b>norma</b> ou <b>não</b>), aplicação e correção explícitas. Manual com <b>ficha síntese</b> (objetivo, público, material, aplicação, correção).</li>
+<li><b>Art. 9º–11:</b> submissão pelo <b>Satepsi</b> com responsável técnico com CRP ativo. Avaliado pela <b>CCAP</b>, com <b>2 pareceristas ad hoc</b>; decisão final do Plenário do CFP. Recurso em até <b>30 dias</b>.</li>
+<li><b>Art. 14:</b> estudos de validade, precisão e normas valem <b>15 anos</b>. Sem revisão, o teste sai da lista de favoráveis.</li>
+<li><b>Art. 16:</b> comercialização e uso <b>restritos a psicólogos inscritos no CRP</b>; as editoras registram nome, CRP e número de série de quem comprou.</li>
+<li><b>Art. 18–20:</b> versões equivalentes (informatizadas e não informatizadas) exigem estudo de equivalência. <b>Art. 21–25:</b> atualização de normas. <b>Art. 26–29:</b> atualização de estudos de validade.</li>
+<li><b>Art. 30–33:</b> justiça e direitos humanos. É vedado: negligência, preconceito, exploração, violência; induzir convicções políticas, religiosas, raciais etc.; usar a psicologia como castigo ou tortura; criar instrumentos que reforcem estigmas e estereótipos.</li></ul>
+<h4>Anexo I — níveis e números para lembrar</h4>
+<ul><li>Níveis de qualidade: <b>A+ (excelente), A (bom), B (suficiente), C (insuficiente)</b>. Mínimo para ser aprovado: A+, A ou B.</li>
+<li>Precisão: B ≥ 0,60 · A ≥ 0,70 (2 estudos) · A+ ≥ 0,80 (2 ou mais estudos).</li>
+<li>Validade convergente: associação a partir de <b>0,50</b>. Construtos relacionados: a partir de <b>0,20</b>. Discriminante: correlações menores que as de convergência (diferença &gt; 0,10).</li>
+<li>Normas (A+): 5 regiões, mín. 250 por região ou 1000 no total. (A): 2 regiões, 250 por região ou 500 no total. (B): 1 região, mín. 500.</li>
+<li><b>Sensibilidade:</b> verdadeiros positivos (minimiza falsos negativos). <b>Especificidade:</b> verdadeiros negativos (minimiza falsos positivos).</li></ul></div></details>
+
+<details style="--k:var(--c5)"><summary>6. Resolução CFP nº 06/2019 (comentada)<small>Documentos escritos do psicólogo</small></summary><div>
+<p>Publicada em 29/03/2019. Revoga as Res. 15/1996, <b>07/2003</b> e 04/2019. Separa documentos <b>de avaliação psicológica</b> dos demais, cria o <b>Relatório Multiprofissional</b> e regula destino, envio e devolutiva. Não seguir = <b>falta ético-disciplinar</b>.</p>
+<h4>Princípios</h4>
+<ul><li>Linguagem formal, <b>impessoal, 3ª pessoa</b>, norma culta, objetiva e precisa; sem descrição literal dos atendimentos (salvo justificativa técnica).</li>
+<li>Fenômeno psicológico é <b>dinâmico, não definitivo, não cristalizado</b>.</li>
+<li>Todas as laudas <b>numeradas</b>, <b>rubricadas da primeira até a penúltima</b>, assinatura na <b>última</b>. Fecha com local, data e carimbo (nome, inscrição profissional).</li>
+<li>Referências preferencialmente em <b>nota de rodapé</b>. Sigilo profissional sempre (arts. 9 e 10 do Código de Ética).</li></ul>
+<h4>As 5 modalidades (art. 8º)</h4>
+<div class="tw"><table>
+<tr><th>Documento</th><th>Para quê</th><th>Pontos-chave</th></tr>
+<tr><td><b>Declaração</b></td><td>Registrar comparecimento, acompanhamento e horários</td><td>Objetiva e sucinta. <b>Proibido registrar sintomas, situações ou estados psicológicos.</b> Finalidade é obrigatória.</td></tr>
+<tr><td><b>Atestado</b></td><td>Certificar condição psicológica com base em <b>avaliação</b> (justificar faltas, aptidão para atividade, afastamento)</td><td>Texto corrido, sem parágrafos (ou preencher com traços) para evitar adulteração. Pode usar CID. CRP pode pedir fundamentação em até <b>5 anos</b>. Afastamento &gt; 15 dias: encaminhar ao INSS.</td></tr>
+<tr><td><b>Relatório psicológico</b></td><td>Comunicar o trabalho feito (atendimentos, encaminhamentos, visitas)</td><td><b>Não produz diagnóstico.</b> 5 itens: Identificação, Descrição da demanda, Procedimento, Análise, Conclusão.</td></tr>
+<tr><td><b>Relatório multiprofissional</b></td><td>Atuação em equipe</td><td>Mesmos 5 itens. Procedimentos privativos da Psicologia ficam <b>separados</b>; cada profissional faz sua análise; conclusão pode ser conjunta.</td></tr>
+<tr><td><b>Laudo psicológico</b></td><td>Resultado de <b>avaliação psicológica</b>, para subsidiar decisões</td><td>6 itens: os 5 do relatório + <b>Referências</b> (obrigatórias). Traz diagnóstico/hipótese diagnóstica, prognóstico, encaminhamentos. Pode usar CID ou DSM.</td></tr>
+<tr><td><b>Parecer</b></td><td>Responder a uma questão-problema ou analisar documento psicológico questionado</td><td><b>Não resulta de avaliação nem intervenção.</b> 5 itens: Identificação, Descrição da demanda, Análise, Conclusão, Referências (<b>sem Procedimento</b>). Exige competência e titulação no assunto.</td></tr></table></div>
+<h4>Demais regras</h4>
+<ul><li><b>Guarda (art. 15):</b> mínimo <b>5 anos</b> (documentos + material que os fundamentou), físico ou digital. Responsabilidade do psicólogo junto com a instituição.</li>
+<li><b>Entrega (art. 16):</b> direto ao beneficiário, responsável legal e/ou solicitante, em <b>entrevista devolutiva</b>, com <b>protocolo de entrega assinado</b>. Protocolos de testes <b>não</b> são entregues.</li>
+<li><b>Validade (art. 17):</b> indicada no <b>último parágrafo</b> (Atestado, Laudo e Relatório). Sem norma, o psicólogo define pelo caso.</li>
+<li><b>Devolutiva (art. 18):</b> obrigatória ao menos <b>uma</b> para <b>relatório e laudo</b>; nos demais, recomendada quando solicitada.</li>
+<li>Documento sobre <b>CNH/Polícia Federal</b>: o órgão recebe só o necessário; o psicólogo guarda a cópia completa assinada.</li></ul></div></details>
+</section>
+
+<section id="curto" hidden>
+<div class="box" style="--k:var(--c1)"><b class="t">Avaliação × testagem</b><br>Avaliação = processo amplo (várias fontes + contexto). Testagem = uma etapa (aplicar testes). Nunca usar uma só técnica.</div>
+<div class="box" style="--k:var(--c1)"><b class="t">Etapas</b><br>Demanda → Planejamento → Entrevista → Aplicação → Análise e integração → Documento → Devolutiva.</div>
+<div class="box" style="--k:var(--c1)"><b class="t">Termos</b><br>Psicotécnico = trânsito/seleção/concurso. Psicodiagnóstico = clínica, começo e fim definidos. Critérios: medida, instrumentos, processos.</div>
+<div class="box" style="--k:var(--c6)"><b class="t">Res. 09/2018</b><br>Fundamentais: testes aprovados, entrevista/anamnese, observação. Complementares: instrumentos não psicológicos com respaldo, documentos de equipes. Teste desfavorável/não avaliado = falta ética (exceto pesquisa e ensino). Estudos valem 15 anos. Venda e uso só para psicólogos com CRP. Níveis A+, A, B, C. Precisão mín. 0,60.</div>
+<div class="box" style="--k:var(--c4)"><b class="t">Cartilha p. 24–36</b><br>CFP não indica teste por contexto (autonomia). Conferir Satepsi, depois o manual. Não adaptar aplicação. Fotocópia nunca. Informatizado ≠ online. Não privativo só complementa. Guarda mín. 5 anos. Pesquisa: Comitê de Ética. Dúvida: CRP → CCAP.</div>
+<div class="box" style="--k:var(--c3)"><b class="t">Cartilha p. 10–12</b><br>AP = processo estruturado para subsidiar decisão. Gera hipóteses, não certezas. Tem limites, mas é bem mais confiável que opinião leiga.</div>
+<div class="box" style="--k:var(--c5)"><b class="t">Res. 06/2019</b><br>Declaração (sem sintomas) · Atestado (texto corrido, vem de avaliação) · Relatório (5 itens, sem diagnóstico) · Multiprofissional (5 itens) · Laudo (6 itens, com Referências, vem de avaliação) · Parecer (5 itens, sem Procedimento, não vem de avaliação). Guarda 5 anos. Devolutiva obrigatória para relatório e laudo. Validade no último parágrafo. Rubrica até a penúltima folha.</div>
+<div class="box" style="--k:var(--c2)"><b class="t">Pellini</b><br>AP é processo e prática social. Falta de atualização técnica = falha ética. Qualidade é técnico-ético-política. Meio-termo entre técnica e ética, olhando fatores sociais, culturais e ideológicos.</div>
+<div class="box" style="--k:var(--c2)"><b class="t">Pegadinhas clássicas</b><ul>
+<li>Teste "não privativo" como única base da conclusão → falta ética.</li>
+<li>Parecer não tem item Procedimento; Laudo tem Referências.</li>
+<li>Declaração nunca traz sintoma; Atestado traz condição.</li>
+<li>Prazo para reaplicar teste: a lei não define.</li>
+<li>Res. 07/2003 foi revogada pela 06/2019.</li></ul></div>
+</section>
+
+<section id="cards" hidden><div class="row"><span id="fcn" class="src"></span></div>
+<button class="fc" id="fc" aria-live="polite"></button>
+<div class="row"><button class="btn" id="fp">Anterior</button><button class="btn p" id="ff">Virar</button><button class="btn" id="fnx">Próximo</button><button class="btn" id="fs">Embaralhar</button></div></section>
+
+<section id="quiz" hidden><div class="bar"><i id="qb"></i></div><div id="qa"></div></section>
+</main>
+<script>
+var TABS=[["completo","Resumo completo"],["curto","Resumo curto"],["cards","Flashcards"],["quiz","Quiz"]];
+var nav=document.getElementById("nav");
+TABS.forEach(function(t,i){var b=document.createElement("button");b.textContent=t[1];b.setAttribute("role","tab");b.setAttribute("aria-selected",i==0);b.onclick=function(){show(t[0])};b.dataset.t=t[0];nav.appendChild(b)});
+function show(id){TABS.forEach(function(t){document.getElementById(t[0]).hidden=t[0]!=id});[].forEach.call(nav.children,function(b){b.setAttribute("aria-selected",b.dataset.t==id)});window.scrollTo(0,0)}
+var CARDS=[
+["Defina Avaliação Psicológica (Res. 09/2018).","Processo estruturado de investigação de fenômenos psicológicos, com métodos, técnicas e instrumentos, para prover informações à tomada de decisão (individual, grupal ou institucional)."],
+["Diferença entre avaliação e testagem?","Avaliação é o processo amplo que integra várias fontes. Testagem é a aplicação de testes, uma etapa da avaliação."],
+["Cite as fontes fundamentais.","Testes aprovados pelo CFP; entrevistas psicológicas e anamnese; protocolos/registros de observação do comportamento."],
+["Cite as fontes complementares.","Técnicas e instrumentos não psicológicos com respaldo científico; documentos técnicos (protocolos ou relatórios de equipes multiprofissionais)."],
+["Etapas do processo de avaliação (aula)?","Demanda, planejamento, entrevista, aplicação de técnicas e instrumentos, análise e integração, documento, devolutiva."],
+["O que é psicotécnico?","Termo ligado aos exames de trânsito (CNH), seleção e concursos."],
+["O que é psicodiagnóstico?","Avaliação em contexto clínico, com início e fim previstos, para diagnóstico e encaminhamento terapêutico."],
+["Quantos anos duram os estudos de validade, precisão e normas?","15 anos (art. 14 da Res. 09/2018). Sem revisão, o teste vira desfavorável."],
+["Existe prazo legal para reaplicar um teste?","Não. Seguir o manual e, se omisso, a literatura científica."],
+["O CFP indica qual teste usar em cada contexto?","Não. A escolha é do psicólogo (autonomia); o CFP só informa quais são favoráveis no Satepsi."],
+["Posso adaptar a aplicação ou fotocopiar um teste?","Não. É falta ética (interfere na validade e fidedignidade) e fotocópia fere a Lei de Direitos Autorais, mesmo para fins acadêmicos."],
+["Informatizado é igual a online?","Não. Informatizado = mediado por computador (exige estudo de equivalência). Online = remoto, só se o manual aprovado permitir."],
+["O que são instrumentos não privativos?","Instrumentos que não são teste psicológico; só servem como fonte complementar. Concluir só com eles é falta ética."],
+["Por quanto tempo guardar documentos e materiais?","No mínimo 5 anos (Res. CFP 01/2009 e art. 15 da Res. 06/2019)."],
+["Quais as 5 modalidades de documento (Res. 06/2019)?","Declaração, Atestado, Relatório (psicológico e multiprofissional), Laudo e Parecer."],
+["Estrutura do Laudo?","Identificação, Descrição da demanda, Procedimento, Análise, Conclusão e Referências (6 itens)."],
+["Estrutura do Parecer?","Identificação, Descrição da demanda, Análise, Conclusão e Referências (sem Procedimento)."],
+["O que não pode constar na Declaração?","Sintomas, situações ou estados psicológicos."],
+["Qual documento não produz diagnóstico?","O Relatório psicológico (e o multiprofissional)."],
+["Onde fica a validade do documento? E a devolutiva?","Validade no último parágrafo. Devolutiva obrigatória (ao menos uma) para relatório e laudo."],
+["Quem decide se um instrumento é teste psicológico?","A CCAP (Comissão Consultiva em Avaliação Psicológica) do CFP, provocada pelo CRP."],
+["Mínimo de precisão para aprovar um teste?","Indicadores ≥ 0,60 em ao menos um estudo brasileiro (nível B). A ≥ 0,70; A+ ≥ 0,80."],
+["Qual a crítica de Pellini sobre qualidade da avaliação?","Ela é técnico-ético-política: não basta a eficácia técnica. Desatualização técnica também fere a ética."]
+];
+var ci=0,back=false,fc=document.getElementById("fc");
+function rc(){fc.textContent=back?CARDS[ci][1]:CARDS[ci][0];fc.className="fc"+(back?" back":"");document.getElementById("fcn").textContent="Cartão "+(ci+1)+" de "+CARDS.length+(back?" · resposta":" · pergunta")}
+function flip(){back=!back;rc()}
+fc.onclick=flip;document.getElementById("ff").onclick=flip;
+document.getElementById("fnx").onclick=function(){ci=(ci+1)%CARDS.length;back=false;rc()};
+document.getElementById("fp").onclick=function(){ci=(ci-1+CARDS.length)%CARDS.length;back=false;rc()};
+document.getElementById("fs").onclick=function(){for(var i=CARDS.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=CARDS[i];CARDS[i]=CARDS[j];CARDS[j]=t}ci=0;back=false;rc()};
+rc();
+var Q=[
+["Segundo a Res. 09/2018, qual NÃO é fonte fundamental de informação?",["Teste psicológico aprovado pelo CFP","Entrevista psicológica e anamnese","Relatório de equipe multiprofissional","Registro de observação do comportamento"],2,"Documentos técnicos, como relatórios de equipes multiprofissionais, são fontes complementares."],
+["A testagem psicológica é:",["Sinônimo de avaliação psicológica","Uma etapa do processo de avaliação","Dispensável quando há entrevista","Mais ampla que a avaliação"],1,"A avaliação é o processo amplo; a testagem é uma de suas etapas."],
+["Um psicólogo conclui o estado psicológico do avaliando usando apenas instrumentos não privativos. Isso é:",["Permitido se houver base científica","Permitido em contexto clínico","Falta ética","Obrigatório em avaliações compulsórias"],2,"A avaliação deve se basear em fontes fundamentais (cartilha, perg. 29)."],
+["Por quanto tempo valem os estudos de validade, precisão e normas de um teste?",["5 anos","10 anos","15 anos","20 anos para todos"],2,"Art. 14 da Res. 09/2018: 15 anos."],
+["Qual o prazo legal para reaplicar um teste psicológico?",["6 meses","1 ano","2 anos","Não há prazo legal"],3,"Consultar o manual; se omisso, a literatura científica (perg. 16)."],
+["O CFP indica quais testes usar em cada contexto?",["Sim, por tabela oficial","Sim, só em avaliações compulsórias","Não, a escolha é do psicólogo","Apenas para testes informatizados"],2,"O CFP defende a autonomia profissional; informa apenas quais testes são favoráveis."],
+["Fotocópia de teste psicológico para uso acadêmico:",["É permitida se for para ensino","É permitida com autorização do professor","É proibida em qualquer hipótese","É permitida se de boa qualidade"],2,"Fere a validade do teste e a Lei 9.610/1998, nem para fins acadêmicos ou de pesquisa."],
+["Teste informatizado e teste online são:",["A mesma coisa","Diferentes: online exige que o manual aprovado permita aplicação remota","Diferentes: online dispensa estudo de equivalência","Proibidos pelo CFP"],1,"Informatizado não equivale a online/remoto (perg. 25)."],
+["O uso de teste com parecer desfavorável no Satepsi é permitido em:",["Avaliação clínica de rotina","Pesquisa e ensino com objetivo formativo e histórico","Seleção de pessoal","Nunca, em nenhuma hipótese"],1,"Art. 2º §1º da Res. 09/2018 traz essa exceção."],
+["Tempo mínimo de guarda dos documentos e materiais da avaliação:",["2 anos","3 anos","5 anos","10 anos"],2,"Res. CFP 01/2009 e art. 15 da Res. 06/2019."],
+["Quem decide se um instrumento é teste psicológico?",["A editora","O CRP sozinho","A CCAP do CFP","O próprio psicólogo"],2,"O CRP (ou o psicólogo, via CRP) submete a dúvida à CCAP."],
+["Qual documento NÃO pode registrar sintomas ou estados psicológicos?",["Atestado","Laudo","Declaração","Relatório"],2,"A Declaração é objetiva e sucinta: só comparecimento, acompanhamento e horários."],
+["Qual documento resulta de um processo de avaliação psicológica e tem 6 itens?",["Relatório","Parecer","Declaração","Laudo"],3,"Laudo: Identificação, Demanda, Procedimento, Análise, Conclusão e Referências."],
+["O Parecer psicológico:",["Tem item Procedimento","Resulta de avaliação psicológica","Responde a uma questão-problema ou analisa documento questionado","Dispensa referências"],2,"Não vem de avaliação nem intervenção; não tem Procedimento; Referências são obrigatórias."],
+["O Relatório psicológico:",["Tem finalidade de produzir diagnóstico","Não tem finalidade de produzir diagnóstico","É igual ao laudo","Dispensa devolutiva"],1,"Art. 11: o relatório não tem como finalidade produzir diagnóstico psicológico."],
+["Em qual local do documento deve constar o prazo de validade?",["No cabeçalho","Na identificação","No último parágrafo","Em folha separada"],2,"Art. 17 da Res. 06/2019."],
+["A entrevista devolutiva é obrigatória (ao menos uma) para:",["Declaração e atestado","Relatório e laudo","Parecer apenas","Todos, sem exceção"],1,"Art. 18: relatório e laudo. Nos demais, é recomendada quando solicitada."],
+["Sobre rubrica e assinatura nos documentos psicológicos:",["Rubrica em todas as folhas, inclusive a última","Só assinatura na primeira","Rubrica da primeira até a penúltima e assinatura na última","Dispensadas em documento digital"],2,"Art. 5º §8º da Res. 06/2019."],
+["Qual a ordem correta das etapas do processo de avaliação (aula)?",["Entrevista, demanda, planejamento, aplicação","Demanda, planejamento, entrevista, aplicação, análise, documento, devolutiva","Planejamento, aplicação, demanda, devolutiva","Aplicação, entrevista, documento, demanda"],1,"Receber a demanda vem primeiro; a devolutiva fecha o processo."],
+["O termo 'psicotécnico' está associado a:",["Clínica e psicoterapia","Trânsito, seleção e concursos","Escola e aprendizagem","Pesquisa experimental"],1,"Psicodiagnóstico, ao contrário, é o termo ligado à clínica."],
+["Para Pellini, desconhecer a técnica ou não se atualizar é:",["Apenas falha técnica sem implicação ética","Falha técnica que também fere a ética","Questão de escolha pessoal","Irrelevante se a intenção foi boa"],1,"Pelo Código de Ética, art. 1º 'c': serviços com base na ciência, na ética e na legislação."],
+["Qual o intervalo mínimo exigido no Anexo I para precisão (nível B)?",["0,40","0,50","0,60","0,80"],2,"B ≥ 0,60; A ≥ 0,70; A+ ≥ 0,80."],
+["Quanto aos limites da avaliação psicológica, a cartilha afirma que:",["Ela prevê comportamento de forma determinística","Ela chega a respostas com certeza inquestionável","Tem limites, mas é muito mais confiável que opinião leiga","É inferior ao acaso"],2,"Perg. 4 (p. 12): fenômenos complexos, porém método científico dá respostas mais confiáveis."],
+["A venda e o uso de testes psicológicos são restritos a:",["Qualquer profissional de saúde","Psicólogos inscritos no CRP","Estudantes de Psicologia","Editoras, sem controle"],1,"Art. 16: as editoras mantêm controle com nome, CRP e nº de série."]
+];
+var qi=0,sc=0,done=false,qa=document.getElementById("qa");
+function rq(){document.getElementById("qb").style.width=(qi/Q.length*100)+"%";
+if(qi>=Q.length){var p=Math.round(sc/Q.length*100);qa.innerHTML='<h2>Resultado: '+sc+' de '+Q.length+' ('+p+'%)</h2><p>'+(p>=80?'Mandou bem! Revise só os erros.':p>=60?'Está no caminho. Releia o resumo curto e refaça.':'Vale reler o resumo completo e treinar os flashcards.')+'</p><button class="btn p" id="rs">Refazer</button>';document.getElementById("rs").onclick=function(){qi=0;sc=0;rq()};return}
+var q=Q[qi];done=false;qa.innerHTML='<p class="src">Questão '+(qi+1)+' de '+Q.length+'</p><h3>'+q[0]+'</h3>';
+q[1].forEach(function(o,i){var b=document.createElement("button");b.className="opt";b.textContent=String.fromCharCode(65+i)+") "+o;b.onclick=function(){pick(i,b)};qa.appendChild(b)})}
+function pick(i,b){if(done)return;done=true;var q=Q[qi],bs=qa.querySelectorAll(".opt");if(i==q[2]){sc++;b.classList.add("ok")}else{b.classList.add("no");bs[q[2]].classList.add("ok")}
+var e=document.createElement("div");e.className="ex";e.textContent=(i==q[2]?"Correto. ":"Não foi dessa vez. ")+q[3];qa.appendChild(e);
+var n=document.createElement("button");n.className="btn p";n.textContent=qi==Q.length-1?"Ver resultado":"Próxima";n.onclick=function(){qi++;rq()};qa.appendChild(n)}
+rq();
+</script></body></html>
